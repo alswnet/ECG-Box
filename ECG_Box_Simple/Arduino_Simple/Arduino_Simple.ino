@@ -10,11 +10,19 @@ void setup() {
 }
 
 void loop() {
-  if ((digitalRead(LMas) == 1)) || (digitalRead(LMenos) == 1) {
+  if ((digitalRead(LMas) == 1) || (digitalRead(LMenos) == 1)) {
+    Serial.print(1024);
+    Serial.print(" ");
+    serial.print(0);
+    Serial.print(" ")
     Serial.println(1024 / 2);
   }
   else {
-    Serial.print(analogRead(SCorazon));
+    Serial.print(1024);
+    Serial.print(" ");
+    serial.print(0);
+    Serial.print(" ")
+    Serial.println(analogRead(SCorazon));
   }
   delay(1);
 }
